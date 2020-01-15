@@ -1,0 +1,28 @@
+{
+  "name": "january-design",
+  "version": "1.0.0",
+  "description": "January design - a three.js-based library viewer.",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anson-ii/one-design-a-month.git"
+  },
+  "keywords": [
+    "january",
+    "three",
+    "library",
+    "viewer"
+  ],
+  "author": "Anson Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anson-ii/one-design-a-month/issues"
+  },
+  "homepage": "https://github.com/anson-ii/one-design-a-month#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
