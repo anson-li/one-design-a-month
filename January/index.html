@@ -2,11 +2,16 @@
     <head>
         <meta charset="utf-8">
         <title>Move JS 3D Physics</title>
+        <link rel="stylesheet" href="css/main.css"> 
         <style>
             body { margin: 0; }
         </style>
     </head>
     <body>
+        <div class="op1">
+            <div class="title">January</div>
+            <div class="subtitle">created in three.js</div>
+        </div>
         <script src="js/three.min.js"></script>
         <script src="js/ammo.js"></script>
         <script>
@@ -55,10 +60,10 @@
 
                 //create the scene
                 scene = new THREE.Scene();
-                scene.background = new THREE.Color( 0xbfd1e5 );
+                scene.background = new THREE.Color( 0x333333 );
 
                 //create camera
-                camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.2, 5000 );
+                camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 0.2, 5000 );
                 camera.position.set( 0, 30, 70 );
                 camera.lookAt(new THREE.Vector3(0, 0, 0));
 
@@ -186,7 +191,7 @@
                 let mass = 0;
 
                 //threeJS Section
-                let blockPlane = new THREE.Mesh(new THREE.BoxBufferGeometry(), new THREE.MeshPhongMaterial({color: 0xa0afa4}));
+                let blockPlane = new THREE.Mesh(new THREE.BoxBufferGeometry(), new THREE.MeshPhongMaterial({color: 0x121212}));
 
                 blockPlane.position.set(pos.x, pos.y, pos.z);
                 blockPlane.scale.set(scale.x, scale.y, scale.z);
