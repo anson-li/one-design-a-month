@@ -1,15 +1,123 @@
+@-webkit-keyframes Lean {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-moz-keyframes Lean {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@keyframes Lean {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+
 .op1 {
     position: absolute;
-    right: 30rem;
+    right: 1200px;
+    top: 0px;
+    width: 600px;
     padding-top: 30vh;
+    z-index: 999;
 }
 
 .title {
     color: white;
     font-size: 3rem;
+    font-family: ivymode, sans-serif;
+    font-weight: thin;
+    letter-spacing: 2px;
 }
 
 .subtitle {
-    color: #999999;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 0.9rem;
+    font-family: ivymode, sans-serif;
+    font-weight: thin;
+    letter-spacing: 1px;
+}
+
+#background {
+    height: 2200px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(11%) saturate(1883%) hue-rotate(323deg) brightness(99%) contrast(87%);
+    left: -1650px;
+    top: -300px;
+    position: absolute;
+    z-index: 900;
+}
+
+.canvas {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    background: #000;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 800;
+    left: 649px;
+    top: 492px;
+    
+    background: linear-gradient(1deg, #5ab49d, #5c5ab4, #5ab461, #b4925a, #a45ab4);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: Lean 20s ease infinite;
+    -moz-animation: Lean 20s ease infinite;
+    animation: Lean 20s ease infinite;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    position: absolute;
+    z-index: 901;
+    left: 1349px;
+    top: 192px;
+    
+    background: rgb(251,145,63);
+    background: linear-gradient(337deg, rgba(251,145,63,1) 35%, rgba(247,166,0,1) 100%);
+}
+
+#cursor {
+    width: 300;
+    height: 100;
+    border-radius: 50;
+    z-index: 999;
+    position: absolute;
+}
+
+#cursor-circle {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 20px;
+    border: 1px #999 solid;
+}
+
+#cursor-text {
+    color: #999;
+    margin-left: 35px;
+    margin-top: -30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 0.6rem;
 }
